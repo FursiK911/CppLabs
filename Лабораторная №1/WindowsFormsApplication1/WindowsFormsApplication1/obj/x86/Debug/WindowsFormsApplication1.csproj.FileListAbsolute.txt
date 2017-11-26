@@ -1,0 +1,4 @@
+C:\Users\Дмитрий\Desktop\Учеба\C++\Лабораторная №1\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Дмитрий\Desktop\Учеба\C++\Лабораторная №1\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Дмитрий\Desktop\Учеба\C++\Лабораторная №1\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Дмитрий\Desktop\Учеба\C++\Лабораторная №1\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
