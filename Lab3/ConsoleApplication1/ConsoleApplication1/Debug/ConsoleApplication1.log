@@ -1,0 +1,5 @@
+﻿  Summator.cpp
+d:\учеба\c++\лабораторная №3\consoleapplication1\consoleapplication1\summator.cpp(88): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  Divisor.cpp
+  Создание кода...
+  ConsoleApplication1.vcxproj -> D:\Учеба\C++\Лабораторная №3\ConsoleApplication1\Debug\ConsoleApplication1.exe
