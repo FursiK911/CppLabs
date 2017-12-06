@@ -3,4 +3,5 @@ class ITaxPayment
 {
 public:
 	virtual void payTax() = 0;
+	virtual ~ITaxPayment() {};
 };

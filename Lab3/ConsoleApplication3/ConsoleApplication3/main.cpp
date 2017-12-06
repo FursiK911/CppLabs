@@ -2,74 +2,11 @@
 #include <iomanip>
 #include "Shop.h"
 #include "Boutique.h"
+#include "Direction.h"
+#include "Market.h"
 #include "Pharmacy.h"
 #include "ITaxPayment.h"
 using namespace std;
-
-//void sort(Shop& x, Shop& y, Shop& z)
-//{
-//	Shop arr[3];			//Создаем и заполняем временный массив
-//	arr[0].setName(x.getName());
-//	arr[0].setAdress(x.getAdress());
-//	arr[0].setYear(x.getYear());
-//	arr[0].setNumber(x.getNumber());
-//	arr[0].setTotalProfit(x.getTotalProfit());
-//
-//	arr[1].setName(y.getName());
-//	arr[1].setAdress(y.getAdress());
-//	arr[1].setYear(y.getYear());
-//	arr[1].setNumber(y.getNumber());
-//	arr[1].setTotalProfit(y.getTotalProfit());
-//
-//	arr[2].setName(z.getName());
-//	arr[2].setAdress(z.getAdress());
-//	arr[2].setYear(z.getYear());
-//	arr[2].setNumber(z.getNumber());
-//	arr[2].setTotalProfit(z.getTotalProfit());
-//
-//	int i;
-//	cout << "1.Сортировка по убыванию общей прибыли\n2.Сортировка по убыванию среднего прироста прибыли" << endl;
-//	cin >> i;
-//	switch (i)
-//	{
-//	case 1:
-//		for (int i = 0; i < 2; i++) //Сортируем...
-//			for (int j = 2; j > i; j--)
-//				if (arr[j - 1].getTotalProfit() < arr[j].getTotalProfit())
-//				{
-//					int tmp = arr[j - 1].getTotalProfit();
-//					arr[j - 1].setTotalProfit(arr[j].getTotalProfit());
-//					arr[j].setTotalProfit(tmp);
-//				}
-//		//Выводим полученные результаты
-//		cout << setw(23) << arr[0].getName() << setw(23) << arr[1].getName() << setw(23) << arr[2].getName() << endl; 
-//		cout << setw(23) << arr[0].getAdress() << setw(23) << arr[1].getAdress() << setw(23) << arr[2].getAdress() << endl;
-//		cout << setw(23) << arr[0].getYear(1) << setw(23) << arr[1].getYear(1) << setw(23) << arr[2].getYear(1) << endl;
-//		cout << setw(23) << arr[0].getNumber() << setw(23) << arr[1].getNumber() << setw(23) << arr[2].getNumber() << endl;
-//		cout << setw(23) << arr[0].getTotalProfit() << setw(23) << arr[1].getTotalProfit() << setw(23) << arr[2].getTotalProfit() << endl;
-//		cout << endl;
-//		break;
-//	case 2:
-//		for (int i = 0; i < 2; i++) //Сортируем...
-//			for (int j = 2; j > i; j--)
-//				if ((arr[j - 1].getTotalProfit()/90) < (arr[j].getTotalProfit()/90))
-//				{
-//					int tmp = arr[j - 1].getTotalProfit();
-//					arr[j - 1].setTotalProfit(arr[j].getTotalProfit());
-//					arr[j].setTotalProfit(tmp);
-//				}
-//		//Выводим полученные результаты
-//		cout << setw(23) << arr[0].getName() << setw(23) << arr[1].getName() << setw(23) << arr[2].getName() << endl;
-//		cout << setw(23) << arr[0].getAdress() << setw(23) << arr[1].getAdress() << setw(23) << arr[2].getAdress() << endl;
-//		cout << setw(23) << arr[0].getYear(1) << setw(23) << arr[1].getYear(1) << setw(23) << arr[2].getYear(1) << endl;
-//		cout << setw(23) << arr[0].getNumber() << setw(23) << arr[1].getNumber() << setw(23) << arr[2].getNumber() << endl;
-//		cout << setw(23) << arr[0].getTotalProfit() << setw(23) << arr[1].getTotalProfit() << setw(23) << arr[2].getTotalProfit() << endl;
-//		cout << endl;
-//		break;
-//	default:
-//		break;
-//	}
-//}
 
 void main()
 {
@@ -145,10 +82,15 @@ void main()
 		sale3[i] = rand() % 1000;
 		(*shop[2]) += sale3[i];
 	}
-	//sort(*shop[0], *shop[1], *shop[2]);
 	shop[0]->payTax();
 	shop[1]->payTax();
 	shop[2]->payTax();
-	shop[0]->serialize();
+	Boutique* b[1] = dynamic_cast<Boutique*>(shop[0]);
+	Market m;
+	m.calculateDirection(shop, 2);
+	//shop[0]->serialize();
+	delete sale1;
+	delete sale2;
+	delete sale3;
 	system("pause");
 }

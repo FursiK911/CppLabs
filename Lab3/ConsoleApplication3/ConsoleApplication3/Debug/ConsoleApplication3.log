@@ -1,6 +1,0 @@
-﻿  main.cpp
-d:\учеба\c++\лабораторная №3\consoleapplication3\consoleapplication3\main.cpp(138): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-d:\учеба\c++\лабораторная №3\consoleapplication3\consoleapplication3\main.cpp(95): warning C4101: word2: неиспользованная локальная переменная
-d:\учеба\c++\лабораторная №3\consoleapplication3\consoleapplication3\main.cpp(85): warning C4101: work1: неиспользованная локальная переменная
-d:\учеба\c++\лабораторная №3\consoleapplication3\consoleapplication3\main.cpp(105): warning C4101: word3: неиспользованная локальная переменная
-  ConsoleApplication3.vcxproj -> D:\Учеба\C++\Лабораторная №3\ConsoleApplication3\Debug\ConsoleApplication3.exe

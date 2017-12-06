@@ -147,13 +147,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Boutique.cpp" />
+    <ClCompile Include="Direction.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Market.cpp" />
     <ClCompile Include="Pharmacy.cpp" />
     <ClCompile Include="Shop.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Boutique.h" />
+    <ClInclude Include="Direction.h" />
     <ClInclude Include="ITaxPayment.h" />
+    <ClInclude Include="Market.h" />
     <ClInclude Include="Pharmacy.h" />
     <ClInclude Include="Shop.h" />
   </ItemGroup>
