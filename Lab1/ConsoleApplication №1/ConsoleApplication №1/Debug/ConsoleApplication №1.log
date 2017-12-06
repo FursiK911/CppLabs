@@ -1,0 +1,8 @@
+﻿  main.cpp
+d:\учеба\c++\lab1\consoleapplication №1\consoleapplication №1\main.cpp(8): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+d:\учеба\c++\lab1\consoleapplication №1\consoleapplication №1\main.cpp(14): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+d:\учеба\c++\lab1\consoleapplication №1\consoleapplication №1\main.cpp(18): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note:  см. объявление "scanf"
+d:\учеба\c++\lab1\consoleapplication №1\consoleapplication №1\main.cpp(58): warning C4018: <: несоответствие типов со знаком и без знака
+  ConsoleApplication №1.vcxproj -> D:\Учеба\C++\Lab1\ConsoleApplication №1\Debug\ConsoleApplication №1.exe
