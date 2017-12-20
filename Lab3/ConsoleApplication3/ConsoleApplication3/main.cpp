@@ -2,7 +2,6 @@
 #include <iomanip>
 #include "Shop.h"
 #include "Boutique.h"
-#include "Direction.h"
 #include "Market.h"
 #include "Pharmacy.h"
 #include "ITaxPayment.h"
@@ -43,8 +42,8 @@ void main()
 	string type3 = "Круглосуточно";
 
 	Shop* shop[3];
-	shop[0] = new Pharmacy();
-	shop[1] = new Pharmacy();
+	shop[0] = new Boutique();
+	shop[1] = new Boutique();
 	shop[2] = new Boutique();
 	shop[0]->setName(name1);
 	shop[0]->setAdress(adress1);
@@ -53,6 +52,7 @@ void main()
 	shop[0]->setTotalProfit(totalProfit1);
 	shop[0]->setNumberClientDiscount(clientDiscount1);
 	shop[0]->setType(type1);
+	shop[0]->setDirection("Clothing");
 
 	shop[0]->deSerialize();
 
@@ -61,12 +61,14 @@ void main()
 	shop[1]->setYear(year2);
 	shop[1]->setNumber(number2);
 	shop[1]->setTotalProfit(totalProfit2);
+	shop[1]->setDirection("Food");
 
 	shop[2]->setName(name3);
 	shop[2]->setAdress(adress3);
 	shop[2]->setYear(year3);
 	shop[2]->setNumber(number3);
 	shop[2]->setTotalProfit(totalProfit3);
+	shop[2]->setDirection("Food");
 
 	int* sale1 = new int[90];
 	int* sale2 = new int[90];
@@ -85,9 +87,15 @@ void main()
 	shop[0]->payTax();
 	shop[1]->payTax();
 	shop[2]->payTax();
-	Boutique* b[1] = dynamic_cast<Boutique*>(shop[0]);
+	Boutique* arr[3];
+	for (int i = 0; i < 3; i++)
+	{
+		*(arr + i) = dynamic_cast<Boutique*>(shop[i]);
+	}
+	/*cout << shop[0] << endl;
+	cout << arr[0] << endl;*/
 	Market m;
-	m.calculateDirection(shop, 2);
+	m.calculateDirection(*arr, 2);
 	//shop[0]->serialize();
 	delete sale1;
 	delete sale2;

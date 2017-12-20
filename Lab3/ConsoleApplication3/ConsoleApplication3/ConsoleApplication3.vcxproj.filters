@@ -30,9 +30,6 @@
     <ClCompile Include="Market.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="Direction.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shop.h">
@@ -48,9 +45,6 @@
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="Market.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Direction.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>

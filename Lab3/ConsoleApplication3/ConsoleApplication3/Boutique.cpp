@@ -28,3 +28,13 @@ void Boutique::setPercent(int p)
 {
 	percent = p;
 }
+
+char * Boutique::getDirection()
+{
+	return direction;
+}
+
+void Boutique::setDirection(char * dir)
+{
+	direction = dir;
+}

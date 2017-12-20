@@ -2,9 +2,8 @@
 #include <iostream>
 #include "Shop.h"
 #include "ITaxPayment.h"
-#include "Direction.h"
 class Pharmacy :
-	public Shop, public ITaxPayment, public Direction
+	public Shop, public ITaxPayment
 {
 private:
 	int tax;

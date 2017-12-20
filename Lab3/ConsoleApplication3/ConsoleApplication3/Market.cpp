@@ -25,4 +25,7 @@ void Market::calculateDirection(Boutique* boutique, int lenght)
 	percentClothing = (lenght / 100) * countClothing;
 	percentFood = (lenght / 100) * countFood;
 	percentShoes = (lenght / 100) * countShoes;
+	cout << percentClothing << endl;
+	cout << percentFood << endl;
+	cout << percentShoes << endl;
 }

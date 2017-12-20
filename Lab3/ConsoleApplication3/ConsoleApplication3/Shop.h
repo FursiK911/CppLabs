@@ -46,4 +46,6 @@ public:
 	virtual void payTax()=0;
 	virtual int getTax()=0;
 	virtual void setPercent(int p)=0;
+	virtual void setDirection(char* dir) = 0;
+	virtual char* getDirection() = 0;
 };

@@ -1,7 +1,6 @@
 #pragma once
-#include "Shop.h"
 #include "Boutique.h"
-class Market :
+class Market
 {
 private:
 	int countClothing;
